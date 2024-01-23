@@ -18,80 +18,85 @@
 <body>
 <!-- Put your HTML code here... -->
 <header>
-	<div id="logo">
-		<a href="#0>"><img src="./images/logo.png" alt="Food Explorer Logo"></a>
+	<div>
+		<!-- Responsive logo -->
+		<div id="logo">
+			<picture>
+				<source
+				srcset="
+				./images/small-logo.jpg
+				"
+				media="(max-width: 330px)"
+				>
+				<img
+				class="featured-image"
+				src="./images/logo.png"
+				alt="Logo"
+			  />
+			  </picture>
+		</div>
+		<!-- Social Media Buttons -->
+		<div id="social-media">
+			<a href="#"><img src="./images/facebook.png" alt="Facebook Icon"></a>
+			<a href="#"><img src="./images/google.png" alt="Google Icon"></a>
+			<a href="#"><img src="./images/twitter.png" alt="Twitter Icon"></a>
+		</div>
+		<!-- Hamburger button -->
+		<button class="btn-menu" id="btn-menu">
+			<span class="button-content">
+			<img src="./images/menu.png" alt="Menu Icon"> 
+			</span>
+		</button>
 	</div>
-
-	<div id="social-media">
-		<a href="#"><img src="./images/facebook.png" alt="Facebook Icon"></a>
-		<a href="#"><img src="./images/google.png" alt="Google Icon"></a>
-		<a href="#"><img src="./images/twitter.png" alt="Twitter Icon"></a>
+	<div>
+		<!-- Start of navigation-->
+		<nav id="main-navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Recipes</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		<!-- Search Bar -->
+			<div id="search-bar">
+				<form action="#">
+					<input type="text" placeholder="Search">
+					<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
+				</form>
+			</div>
+			</nav>
+		<!-- End of navigation -->
 	</div>
-	<!-- Hamburger button-->
-	<button class="btn-menu" id="btn-menu">
-		<span class="button-content">
-		  <span class="text">Menu</span>
-		  <img src="./images/menu.png" alt="Menu Icon"> 
-		</span>
-	  </button>
-
-	  <!-- Start of navigation-->
-	  <nav id="main-navigation">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Reviews</a></li>
-			<li><a href="#">Recipes</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-
-		<div id="search">
-			<form action="#">
-				<input type="text" placeholder="Search">
-				<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
-			</form>
-		</nav>
-	<!-- End of navigation -->
+	  
 </header>
-
 <main>
 	<!--Top Section start-->
 	<section id="top-section">
-		<img src="./images/mussel.jpg" alt="Mussel">
-		<p>Mussels</p>
+		<!--Responsive Mussel Image-->
+		<picture>
+			<source
+			srcset="
+			  ./images/mussel-small.jpg
+			"
+			media="(max-width:520px)"
+			>
+			<img
+			class="featured-image"
+			src="./images/mussel.jpg"
+			alt="Mussels"
+		  />
+		  </picture>
+		<p>Mussels text description</p>
 		
+		<!-- Responsive salad and pancake images-->
 		<img src="./images/salad.jpg" alt="Salad">
-		<p>Salad</p>
+		<p>Salad text description</p>
 
 		<img src="./images/pancake.jpg" alt="Pancake">
-		<p>Pancake</p>
+		<p>Pancake text description</p>
 	</section>
 	<!--End Section start-->
-
-	<!--Article Section start-->
-	<section id="middle-section">
-		<article id="pasta" class="main-course">
-			<p>Pasta</p>
-			<p>author plus date</p>
-			<img src="./images/pasta.jpg" alt="Pasta">
-			<p>food description</p>
-			<button>Read More</button>
-		</article>
-		<article id="ramen" class="main-course">
-			<p>Ramen</p>
-			<p>author plus date</p>
-			<img src="./images/ramen.jpg" alt="Ramen">
-			<p>food description</p>
-			<button>Read More</button>
-		</article>
-	</section>
-	<!--Article Section end-->
-
-	<!--Older Posts Button Start-->
-	<section id="older-posts-button">
-		<img src="./images/previous-btn.png" alt="Older Posts">
-	</section>
-	<!--Older Posts Button End-->
 
 	<!--SideBar Section start-->
 	<section id="sidebar">
@@ -137,6 +142,32 @@
 		</section>
 	</section>
 	<!--SideBar Section Ends-->
+
+	<!--Article Section start-->
+	<section id="middle-section">
+		<article id="pasta" class="main-course">
+			<p>Pasta</p>
+			<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
+			<img src="./images/pasta.jpg" alt="Pasta">
+			<p>food description</p>
+			<button>Read More</button>
+		</article>
+		
+		<article id="ramen" class="main-course">
+			<p>Ramen</p>
+			<p>author plus date</p>
+			<img src="./images/ramen.jpg" alt="Ramen">
+			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
+			<button>Read More</button>
+		</article>
+	</section>
+	<!--Article Section end-->
+
+	<!--Older Posts Button Start-->
+	<section id="older-posts-button">
+		<img src="./images/previous-btn.png" alt="Older Posts">
+	</section>
+	<!--Older Posts Button End-->
 </main>
 
 <footer>

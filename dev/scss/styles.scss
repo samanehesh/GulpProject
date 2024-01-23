@@ -1,2 +1,9 @@
 // Place your Sass imports here...
+@use "header" as *;
+@use "nav" as *;
+@use "hamburger" as *;
 
+/* Implemented three css variables */
+:root{
+	--bottom-border-color:#1545696b;
+}

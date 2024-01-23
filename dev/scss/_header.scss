@@ -1,0 +1,60 @@
+header {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 1;
+}
+
+header :nth-child(1) {
+    display: flex;
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: space-between;
+}
+
+header :nth-child(2) {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#social-media,
+#search-bar {
+    display: none;
+}
+
+
+
+/* phone small: logo change*/
+@media (min-width: 330px){
+
+}
+
+/*tablet small: hamburger menu is gone, search bar goes on top*/
+@media (min-width: 500px){
+    #btn-menu {
+        display:none;
+    }
+
+    #search-bar{
+        display:block;
+    }
+}
+
+/*tablet large: the two images goes side to side*/
+@media (min-width: 650px){
+
+}
+
+/* social media, and search bar are on top */
+@media (min-width: 700px){
+
+}
+
+/* desktop: side bar appears, search goes into nav bar */
+@media (min-width: 800){
+
+}
+
+/* desktop-xl: have a bg image, mussel images changes to 520px (only image that changes) */
+@media (min-width: 1000px){
+
+}
