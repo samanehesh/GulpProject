@@ -1,0 +1,29 @@
+.btn-menu {
+    margin: 0 20px 20px 0;
+    display: block;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    & .button-content {
+        display: block;
+        height: 100%;
+        cursor: pointer;
+    }
+    & .text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+    &:focus {
+        outline: none;
+        & .button-content {
+            outline: 5px solid #7683C9;
+        }
+    }
+}

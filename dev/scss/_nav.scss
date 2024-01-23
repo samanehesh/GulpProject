@@ -1,0 +1,68 @@
+@use "variables" as *;
+/* Styling navigation bar for mobile view */
+nav {
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	background-color: $brand-color;
+
+    ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 10px;
+        display: block;
+        border-right: none;
+        color: white;
+        border-bottom: none;
+        border-top: 2px solid white;
+        line-height: 40px;
+        &:hover,
+        &:active,
+        &:focus {
+        outline: none;
+        background-color: $hover-color;
+        color: white;
+        }
+    }
+    &.activated {
+        transition: height calc(($trans-time)*1s) ease, visibility 0s 0.3s;
+    }
+    .show & {
+        transition: height calc(($trans-time)*1s) ease, visibility 0s;
+        visibility: visible;
+        height: 210px;
+    }
+}
+
+/* Styling navigation bar for desktop view */
+@media (min-width: 500px) {
+    nav {
+        visibility: visible;
+        height: 44px;
+        background-color: $brand-color;
+        ul {
+            display: flex;
+        }
+        li {
+            flex: 1;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            line-height: 42px;
+            text-align: center;
+                
+        &:hover,
+        &:active,
+        &:focus {
+        background-color: $hover-color;
+        outline: none;
+        }
+    }
+}
+}
