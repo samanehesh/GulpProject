@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Put Web Page Title Here...</title>
+	<title>Food Explorer</title>
 
 	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
 	<!-- Put Google Fonts Here -->
@@ -15,8 +15,131 @@
 </head>
 <body>
 <!-- Put your HTML code here... -->
-<h1>Replace Me with Your HTML Code...</h1>
+<header>
+	<div id="logo">
+		<a href="#0>"><img src="./images/logo.png" alt="Food Explorer Logo"></a>
+	</div>
 
+	<div id="social-media">
+		<a href="#"><img src="./images/facebook.png" alt="Facebook Icon"></a>
+		<a href="#"><img src="./images/google.png" alt="Google Icon"></a>
+		<a href="#"><img src="./images/twitter.png" alt="Twitter Icon"></a>
+	</div>
+	<!-- Hamburger button-->
+	<button class="btn-menu" id="btn-menu">
+		<span class="button-content">
+		  <span class="text">Menu</span>
+		  <img src="./images/menu.png" alt="Menu Icon"> 
+		</span>
+	  </button>
+
+	  <!-- Start of navigation-->
+	  <nav id="main-navigation">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Reviews</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<div id="search">
+			<form action="#">
+				<input type="text" placeholder="Search">
+				<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
+			</form>
+		</nav>
+	<!-- End of navigation -->
+</header>
+
+<main>
+	<!--Top Section start-->
+	<section id="top-section">
+		<img src="./images/mussel.jpg" alt="Mussel">
+		<p>Mussels</p>
+		
+		<img src="./images/salad.jpg" alt="Salad">
+		<p>Salad</p>
+
+		<img src="./images/pancake.jpg" alt="Pancake">
+		<p>Pancake</p>
+	</section>
+	<!--End Section start-->
+
+	<!--Article Section start-->
+	<section id="middle-section">
+		<article id="pasta" class="main-course">
+			<p>Pasta</p>
+			<p>author plus date</p>
+			<img src="./images/pasta.jpg" alt="Pasta">
+			<p>food description</p>
+			<button>Read More</button>
+		</article>
+		<article id="ramen" class="main-course">
+			<p>Ramen</p>
+			<p>author plus date</p>
+			<img src="./images/ramen.jpg" alt="Ramen">
+			<p>food description</p>
+			<button>Read More</button>
+		</article>
+	</section>
+	<!--Article Section end-->
+
+	<!--Older Posts Button Start-->
+	<section id="older-posts-button">
+		<img src="./images/previous-btn.png" alt="Older Posts">
+	</section>
+	<!--Older Posts Button End-->
+
+	<!--SideBar Section start-->
+	<section id="sidebar">
+		<section id="latest-recipes" class="sidebar-menu">
+			<p>LATEST RECIPES</p>
+			<div>
+				<p>Lamb image</p>
+				<img src="./images/lamb-tb.jpg" alt="Lamb">
+			</div>
+			<div>
+				<p>Breakfast image</p>
+				<img src="./images/breakfast-tb.jpg" alt="Breakfast">
+			</div>
+			<div>
+				<p>Calamri image</p>
+				<img src="./images/calamari-tb.jpg" alt="Calamari">
+			</div>
+			<div>
+				<p>Steak image</p>
+				<img src="./images/steak-tb.jpg" alt="Steak">
+			</div>
+		</section>
+
+		<section id="cusines" class="sidebar-menu">
+			<p>CUISINES</p>
+			<p>American (95)</p>
+			<p>Asian (33)</p>
+			<p>Cambodian (3)</p>
+			<p>Chinese (281)</p>
+			<p>Filipino (8)</p>
+			<p>French (40)</p>
+			<p>German (7)</p>
+			<p>Greek (29)</p>
+			<p>Indian (44)</p>
+			<p>Italian (60)</p>
+			<p>Jamaican (7)</p>
+			<p>Japanese (202)</p>
+			<p>Korean (120)</p>
+			<p>Malaysian (12)</p>
+			<p>Mediterranean (9)</p>
+			<p>Mexican (25)</p>
+			<p>Southern (14)</p>
+		</section>
+	</section>
+	<!--SideBar Section Ends-->
+</main>
+
+<footer>
+	<p>&copy; 2024 Site designed by Samaneh, Tracy, and Ayesha. For educational purpose only. Image Credits</p>
+</footer>
 
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
