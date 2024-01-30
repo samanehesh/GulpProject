@@ -18,7 +18,7 @@
 <body>
 <!-- Put your HTML code here... -->
 <header>
-	<div>
+	<!-- <div> -->
 		<!-- Responsive logo -->
 		<div id="logo">
 			<picture>
@@ -42,59 +42,82 @@
 			<a href="#"><img src="./images/twitter.png" alt="Twitter Icon"></a>
 		</div>
 		<!-- Hamburger button -->
-		<button class="btn-menu" id="btn-menu">
-			<span class="button-content">
-			<img src="./images/menu.png" alt="Menu Icon"> 
-			</span>
-		</button>
-	</div>
-	<div>
+		<div>
+			<button class="btn-menu" id="btn-menu">
+				<span class="button-content">
+				<img src="./images/menu.png" alt="Menu Icon"> 
+				</span>
+			</button>
+		</div>
+
+	
+		<div>
 		<!-- Start of navigation-->
-		<nav id="main-navigation">
+			<nav id="main-navigation">
 			<ul>
+				<li id = "searchinham">
+					
+					<form action="#">
+						<input type="text" placeholder="Search">
+						<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
+					</form>
+					
+				</li>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Reviews</a></li>
 				<li><a href="#">Recipes</a></li>
 				<li><a href="#">Contact</a></li>
+				<li id = "socialinham">
+					<a href="#"><img src="./images/facebook.png" ></a>
+					<a href="#"><img src="./images/google.png" ></a>
+					<a href="#"><img src="./images/twitter.png" ></a>
+				</li>
 			</ul>
-		<!-- Search Bar -->
-			<div id="search-bar">
-				<form action="#">
-					<input type="text" placeholder="Search">
-					<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
-				</form>
-			</div>
 			</nav>
+		</div>
+			<!-- Search Bar -->
+		<div id="search-bar">
+			<form action="#">
+				<input type="text" placeholder="Search">
+				<button type="submit"><img src="./images/search.png" alt="Search Icon"></button>
+			</form>
+		</div>
 		<!-- End of navigation -->
-	</div>
+	<!-- </div> -->
 	  
 </header>
 <main>
 	<!--Top Section start-->
 	<section id="top-section">
 		<!--Responsive Mussel Image-->
-		<picture>
-			<source
-			srcset="
-			  ./images/mussel-small.jpg
-			"
-			media="(max-width:520px)"
-			>
-			<img
-			class="featured-image"
-			src="./images/mussel.jpg"
-			alt="Mussels"
-		  />
-		  </picture>
-		<p>Mussels text description</p>
-		
-		<!-- Responsive salad and pancake images-->
-		<img src="./images/salad.jpg" alt="Salad">
-		<p>Salad text description</p>
+		<div class="topimgandp">
+			<picture>
+				<source
+				srcset="
+				  ./images/mussel-small.jpg
+				"
+				media="(max-width:520px)"
+				>
+				<img
+				class="featured-image"
+				src="./images/mussel.jpg"
+				alt="Mussels"
+			  />
+			  </picture>
+			<p>Mussels text description</p>
+		</div>
 
-		<img src="./images/pancake.jpg" alt="Pancake">
-		<p>Pancake text description</p>
+		<div class="topimgandp">
+			<img src="./images/salad.jpg" alt="Salad">
+			<p>Salad text description</p>
+		</div>
+		<div class="topimgandp">
+			<img src="./images/pancake.jpg" alt="Pancake">
+			<p>Pancake text description</p>
+		</div>
+
+
 	</section>
 	<!--End Section start-->
 
@@ -102,43 +125,50 @@
 	<section id="sidebar">
 		<section id="latest-recipes" class="sidebar-menu">
 			<p>LATEST RECIPES</p>
-			<div>
-				<p>Lamb image</p>
+			<div class="recepieDiv">
+				
 				<img src="./images/lamb-tb.jpg" alt="Lamb">
+				<p>Lamb image</p>
 			</div>
-			<div>
-				<p>Breakfast image</p>
+			<div class="recepieDiv">
 				<img src="./images/breakfast-tb.jpg" alt="Breakfast">
+				<p>Breakfast image</p>
+
 			</div>
-			<div>
-				<p>Calamri image</p>
+			<div class="recepieDiv">
 				<img src="./images/calamari-tb.jpg" alt="Calamari">
+				<p>Calamri image</p>
+
 			</div>
-			<div>
-				<p>Steak image</p>
+			<div class="recepieDiv">
 				<img src="./images/steak-tb.jpg" alt="Steak">
+				<p>Steak image</p>
+
 			</div>
 		</section>
 
 		<section id="cusines" class="sidebar-menu">
 			<p>CUISINES</p>
-			<p>American (95)</p>
-			<p>Asian (33)</p>
-			<p>Cambodian (3)</p>
-			<p>Chinese (281)</p>
-			<p>Filipino (8)</p>
-			<p>French (40)</p>
-			<p>German (7)</p>
-			<p>Greek (29)</p>
-			<p>Indian (44)</p>
-			<p>Italian (60)</p>
-			<p>Jamaican (7)</p>
-			<p>Japanese (202)</p>
-			<p>Korean (120)</p>
-			<p>Malaysian (12)</p>
-			<p>Mediterranean (9)</p>
-			<p>Mexican (25)</p>
-			<p>Southern (14)</p>
+			<div>
+				<p>American (95)</p>
+				<p>Asian (33)</p>
+				<p>Cambodian (3)</p>
+				<p>Chinese (281)</p>
+				<p>Filipino (8)</p>
+				<p>French (40)</p>
+				<p>German (7)</p>
+				<p>Greek (29)</p>
+				<p>Indian (44)</p>
+				<p>Italian (60)</p>
+				<p>Jamaican (7)</p>
+				<p>Japanese (202)</p>
+				<p>Korean (120)</p>
+				<p>Malaysian (12)</p>
+				<p>Mediterranean (9)</p>
+				<p>Mexican (25)</p>
+				<p>Southern (14)</p>
+			</div>
+
 		</section>
 	</section>
 	<!--SideBar Section Ends-->
@@ -150,7 +180,9 @@
 			<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
 			<img src="./images/pasta.jpg" alt="Pasta">
 			<p>food description</p>
-			<button>Read More</button>
+			<div>
+				<button>Read More...</button>
+			</div>
 		</article>
 		
 		<article id="ramen" class="main-course">
@@ -158,7 +190,9 @@
 			<p>author plus date</p>
 			<img src="./images/ramen.jpg" alt="Ramen">
 			<p>Posted by Mike Lee on Monday, July 29, 2013</p>
-			<button>Read More</button>
+			<div>
+				<button>Read More...</button>
+			</div>
 		</article>
 	</section>
 	<!--Article Section end-->
