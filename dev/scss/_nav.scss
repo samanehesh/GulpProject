@@ -21,6 +21,8 @@ nav {
         border-bottom: 2px solid black;
         // border-top: 2px solid black;
         line-height: 40px;
+        font-family: $navigationFont;
+        text-align: center;
         &:hover,
         &:active,
         &:focus {
@@ -35,7 +37,31 @@ nav {
     .show & {
         transition: height calc(($trans-time)*1s) ease, visibility 0s;
         visibility: visible;
-        height: 280px;
+        height: 290px;
+    }
+
+    #socialinham{
+        font-size: 20px;
+    }
+    #searchinham input{
+        flex: 1;
+        font-size: 14px;
+        background-color: #dedede;
+        border: none;
+        height: 44px;
+        width: 100%;
+        border-radius:5px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        font-family: $navigationFont;
+    }
+    #searchinham button{
+        position: absolute;
+        top: 9%;
+        right: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 }
 #socialinham{
@@ -45,19 +71,7 @@ nav {
     background-color: white;
     align-items: center;
     border-bottom: 2px solid black;
-}
-#searchinham form{
-    display: flex;
-}
-#searchinham input{
-    flex: 1;
-    width: 100%;
-}
-#searchinham button{
-    margin-left: 0;
-}
-#searchinham button img{
-    border: none;
+    height: auto;
 }
 
 
@@ -84,6 +98,7 @@ nav {
             text-decoration: none;
             line-height: 42px;
             text-align: center;
+            border: none;
                 
         &:hover,
         &:active,
