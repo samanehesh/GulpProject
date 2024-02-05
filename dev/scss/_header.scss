@@ -40,6 +40,7 @@ header > div:nth-child(4) {
 
 
 
+/* phone small: logo change*/
 
 @media (min-width: 331px) {
     /* Styles for the image when the viewport is 330px or smaller */
@@ -48,13 +49,6 @@ header > div:nth-child(4) {
       /* Additional styling for smaller screens */
     }
     
-}
-
-
-
-/* phone small: logo change*/
-@media (min-width: 330px){
-
 }
 
 /*tablet small: hamburger menu is gone, search bar goes on top and no social media*/
@@ -92,13 +86,14 @@ header > div:nth-child(4) {
     }
 
     #search-bar input{
-        font-size: 12px;
+        font-size: 14px;
         background-color: #dedede;
         border: none;
         height: 35px;
         border-radius:5px;
         box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-        font-family: $navigationFont;
+        font-family: $roboto-c-font;
+        font-weight: 400;
         padding-left: 10px;
         margin-right: 10px;
         margin-top: 5px;
@@ -115,12 +110,12 @@ header > div:nth-child(4) {
     
 }
 
-/*tablet large: the two images goes side to side and search bar and social medias are next to each other*/
-@media (min-width: 650px){
+/*tablet large: 2 column pictures*/
+@media (min-width: 670px){
 
 }
 
-/*tablet large: the two images goes side to side and search bar and social medias are next to each other*/
+/*tablet large: social media next top search bar*/
 @media (min-width: 700px){
     #logo img{
         // margin-left: 25px;
@@ -128,35 +123,40 @@ header > div:nth-child(4) {
         // margin-bottom:25px;
         width: 45%;
     }
-
     #social-media{
         display: block;
+    }
+
+    #social-media{
+        display: flex;
         grid-row: 1;
         grid-column: 1;
         justify-self: right;
-        // width: 80px;
-        // height: 50px;
-        margin-right: 40px;
-        margin-top: 40px;
-        font-size: 30px;
+        margin-right: 15px;
+        margin-top: 25px;
+        font-size: 23px;
+        gap: 18px;
     }
 
-    #social-media:hover{
-        color: $social-media-hover-color;
-    }
+    #social-media a:hover .fa-facebook-f::before,
+    #social-media a:hover .fa-google::before,
+    #social-media a:hover .fa-twitter::before {
+    color: $social-media-hover-color;
+}
 
     #search-bar{
-        margin-left: auto;
-        margin-right: 125px;
-        margin-top: 30px;
+        margin-right: 130px;
+        margin-top: 13px;
+
     }
 
     #search-bar button {
-        right: 150px;
-        top: 40px;
+        right: 143px;
+        top: 22px;
     }
     #search-bar input{
-        width: 180px;
+        width: 190px;
+        height: 36px;
     }
 }
 
@@ -168,31 +168,42 @@ header > div:nth-child(4) {
     .li-search-desktop{
         display:inline-block;
     }
-    .search-desktop input[type="search"]{
+
+    .search-desktop{
+        display:block;
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: right;
+        margin-right: 0px;
+        // margin-top: 0px;
+    }
+
+    .search-desktop input{
         font-size: 14px;
         background-color: #dedede;
         border: none;
-        height: 44px;
-        width: 110%;
-        border-radius:3px;
-        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
-        padding: 15px;
-        font-family: $navigationFont;
+        height: 45px;
+        border-radius:2px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+        font-family: $roboto-c-font;
+        font-weight: 400;
+        width: 260px;
+        padding: 10px;
     }
     .search-desktop button {
         position: absolute;
-        top: 15%;
-        right: 40px;
+        right: 10px;
+        top: 77px;
         background: none;
         border: none;
         cursor: pointer;
     }
 
-    #social-media{
-        padding: 40px;
-        font-size:25px; 
-        margin-right: 10px;
-    }
+    // #social-media{
+    //     padding: 40px;
+    //     font-size:25px; 
+    //     margin-right: 10px;
+    // }
 
 }
 

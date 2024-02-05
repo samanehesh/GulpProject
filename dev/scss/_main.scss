@@ -15,11 +15,9 @@ main{
 
 
 .topimgandp {
-    margin-top: 5px;
+    margin-top: px;
     position: relative;
     max-width: 100%; /* Ensure container doesn't exceed its parent's width */
-    font-family: $headingsFont;
-
 }
 
 .topimgandp img {
@@ -35,16 +33,18 @@ main{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: rgba(21, 20, 20, 0.5); /* Add a semi-transparent white background for better readability */
-    padding-left: 5px;
-    margin: 0;
+    background-color: rgba(21, 20, 20, 0.5); /* Add a semi-transparent black background for better readability */
+    padding-left: 10px;
+    margin-left: 0;
     width: 100%; /* Make text width 100% of the container */
     height: 40px;
     color: white;
     align-self: center;
     display: flex;
     align-items: center;
-    font-family: $headingsFont;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 20px;
 }
 // side bar***************************************************
 // recipe start
@@ -58,7 +58,9 @@ main{
     display: flex;
     align-items: center;
     padding-left: 10px;
-    font-family: $headingsFont;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 20px;
 }
 #latest-recipes > div:nth-child(odd){
     background-color: rgb(248, 244, 244);
@@ -78,7 +80,8 @@ main{
 }
 .recipeDiv > p{
     padding-left: 10px;
-    font-family: $bodyFont;
+    font-family: $roboto-c-font;
+    font-weight: 400;
   
 }
 // recipe end
@@ -93,8 +96,9 @@ main{
     display: flex;
     align-items: center;
     padding-left: 10px;
-    font-family: $headingsFont;
-
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 20px;
 }
 #cusines>div:last-child{
     background-color: white;
@@ -104,10 +108,8 @@ main{
     grid-auto-rows: 30px;
     padding-bottom: 10px;
     padding-top: 15px;
-    font-family: $bodyFont;
-    font-size: 13px;
-
-
+    font-family: $roboto-c-font;
+    font-weight: 400;
 }
 // cuisine end
 // sidebar end*******************************************
@@ -129,20 +131,23 @@ main{
     color: $brand-color;
     font-size:xx-large;
     margin-bottom: 5px;
-    font-family: $headingsFont;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 30px;
 }
 .main-course>p{
-    font-family: $bodyFont;
-    font-size: 13px;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .main-course button{
     background-color: $brand-color;
     color: white;
     border: none;
-    height: 25px;
-    font-family: $navigationFont;
-    font-weight: bold;
+    padding: 8px;
+    font-family: $roboto-c-font;
+    font-weight: 700;
 }
 
 .main-course > div{

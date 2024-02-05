@@ -14,21 +14,23 @@ nav {
     }
     a {
         text-decoration: none;
-        padding: 0 10px;
+        padding: 0 12px;
         display: block;
         border-right: none;
         color: white;
-        border-bottom: 2px solid black;
+        border:1px solid $dark-brand-color;
         // border-top: 2px solid black;
         line-height: 40px;
-        font-family: $navigationFont;
+        font-family: $roboto-c-font;
+        font-weight:400;
         text-align: center;
         &:hover,
         &:active,
         &:focus {
-        outline: none;
-        background-color: $hover-color;
-        color: white;
+        outline: 2px solid $brand-color;
+        background-color: white;
+        border-bottom: none;
+        color: #427398;
         }
     }
     &.activated {
@@ -43,6 +45,7 @@ nav {
     #socialinham{
         font-size: 20px;
     }
+    
     #searchinham input{
         flex: 1;
         font-size: 14px;
@@ -53,15 +56,21 @@ nav {
         border-radius:5px;
         box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
         padding: 15px;
-        font-family: $navigationFont;
+        font-family: $roboto-c-font;
+        font-weight: 400;
+        font-size: 20px;
     }
-    #searchinham button{
+    #searchinham button {
         position: absolute;
-        top: 9%;
-        right: 20px;
+        right: 0px;
+        top: 60px;
         background: none;
         border: none;
         cursor: pointer;
+    }
+    #socialinham a,
+    #socialinham:hover a{
+        border: none; /* Remove underline for social icons */
     }
 }
 #socialinham{
@@ -74,6 +83,11 @@ nav {
     height: auto;
 }
 
+#socialinham a:hover .fa-facebook-f::before,
+#socialinham a:hover .fa-google::before,
+#socialinham a:hover .fa-twitter::before {
+color: $social-media-hover-color;
+}
 
 /* Styling navigation bar for desktop view */
 @media (min-width: 500px) {
@@ -85,7 +99,7 @@ nav {
     }
     nav {
         visibility: visible;
-        height: 44px;
+        height: 45px;
         background-color: $brand-color;
         ul {
             display: flex;
@@ -96,16 +110,21 @@ nav {
         a {
             color: white;
             text-decoration: none;
-            line-height: 42px;
+            line-height: 45px;
             text-align: center;
             border: none;
                 
         &:hover,
         &:active,
         &:focus {
-        background-color: $hover-color;
+        background-color: white;
+        color: $brand-color;
         outline: none;
         }
     }
 }
+}
+
+@media (min-width: 1000px){
+
 }
