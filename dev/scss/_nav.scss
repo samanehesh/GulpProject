@@ -91,6 +91,12 @@ color: $social-media-hover-color;
 
 /* Styling navigation bar for desktop view */
 @media (min-width: 500px) {
+    #navDiv{
+        margin-left: 10px;
+        margin-right: 10px;
+        // background-color: black;
+    }
+
     #searchinham{
         display: none;
     }

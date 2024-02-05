@@ -53,6 +53,9 @@ header > div:nth-child(4) {
 
 /*tablet small: hamburger menu is gone, search bar goes on top and no social media*/
 @media (min-width: 500px){
+    header > div:nth-child(4) {
+background-color: black;
+    }
     // header > div:nth-child(1) {
     // }
 
@@ -69,7 +72,7 @@ header > div:nth-child(4) {
 
     header {
         display: grid;
-        grid-template-rows: 70px 50px;
+        grid-template-rows: 70px 45px;
         grid-template-columns: 1;
     }
     #btn-menu {
