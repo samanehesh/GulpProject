@@ -1,14 +1,15 @@
 @use "variables" as *;
 
 footer{
-    background-color: $brand-color;
+    background-color: $dark-brand-color;
     color: white;
     display: flex;
 }
 footer > p{
-    font-size: small;
     text-align: center;
     margin: 10px;
-    font-family: $navigationFont;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+
 
 }

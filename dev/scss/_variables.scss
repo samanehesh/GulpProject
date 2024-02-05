@@ -1,12 +1,14 @@
 /* SASS variables */
 $bar-color: grey;
 $border-color:rgba(167, 157, 157, 0.322);
-$hover-color: rgba(255, 255, 255, 0.3);
+// $hover-color: rgba(255, 255, 255, 0.3);
 $trans-time: 1;
-$brand-color: rgb(26, 113, 169);
+$brand-color: #1a70a9;
+$dark-brand-color: #005991;
 
-$navigationFont: "Roboto Condensed", sans-serif;
-$headingsFont: "Roboto Condensed", sans-serif;
-$bodyFont: "Roboto Light", sans-serif;
+//Nav fw = 700; headings fw = 400;
+$roboto-c-font: "Roboto Condensed", sans-serif;
+//body fw = 300;
+$roboto-font: "Roboto", sans-serif;
 
 $social-media-hover-color: #9f9fa2;
