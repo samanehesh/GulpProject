@@ -71,6 +71,8 @@ nav {
     #socialinham a,
     #socialinham:hover a{
         border: none; /* Remove underline for social icons */
+        outline:none;
+
     }
 }
 #socialinham{
@@ -83,19 +85,27 @@ nav {
     height: auto;
 }
 
+
+
 #socialinham a:hover .fa-facebook-f::before,
 #socialinham a:hover .fa-google::before,
 #socialinham a:hover .fa-twitter::before {
+    // color: linear-gradient(to top, $social-media-hover-color 0%, $social-media-hover-color 100%);
+    // transition: top 0.3s;
 color: $social-media-hover-color;
 }
 
+
+
+
+
 /* Styling navigation bar for desktop view */
 @media (min-width: 500px) {
-    #navDiv{
-        margin-left: 10px;
-        margin-right: 10px;
+    // #navDiv{
+    //     margin-left: 10px;
+    //     margin-right: 10px;
         // background-color: black;
-    }
+    // }
 
     #searchinham{
         display: none;
