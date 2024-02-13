@@ -234,26 +234,17 @@ header > div:nth-child(4) {
         cursor: pointer;
     }
 
-    // #social-media{
-    //     padding: 40px;
-    //     font-size:25px; 
-    //     margin-right: 10px;
-    // }
-
 }
 
 /* desktop-xl: have a bg image,  */
 @media (min-width: 1000px){
     #logo img{
-
         width: 33%;
     }
-
-
 }
+
 @media (min-width: 1300px){
     #logo img{
-
         width: 23%;
     }
 
@@ -261,8 +252,6 @@ header > div:nth-child(4) {
 
 @media (min-width: 1600px){
     #logo img{
-
         width: 13%;
     }
-
 }
