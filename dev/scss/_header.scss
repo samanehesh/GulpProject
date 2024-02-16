@@ -39,7 +39,8 @@ header {
         grid-row: 1;
         grid-column: 1;
         justify-self: right;
-        margin-top: 5px;
+        margin-top: 7px;
+        margin-right: 10px;
     }
     & > div:nth-child(4) {
         grid-row: 2;
@@ -59,11 +60,15 @@ header {
 .li-search-desktop {
     display: none;
 }
+#logo img{
+    margin-left: 6px;
+}
 
 /* phone small: logo change*/
 @media (min-width: 331px) {
     /* Styles for the image when the viewport is 330px or smaller */
     #logo img{
+      margin-top: 4px;
       width: 70%; /* Adjust the width for smaller screens if needed */
     }    
 }
@@ -126,7 +131,7 @@ header {
 /*tablet large: social media next top search bar*/
 @media (min-width: 700px){
     #logo img{
-        width: 45%;
+        width: 42%;
     }
     #social-media{
         display: block;
