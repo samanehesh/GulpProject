@@ -5,12 +5,13 @@ footer{
     color: white;
     display: flex;
     justify-content: center;
-}
-footer > p{
-    text-align: center;
-    margin: 10px;
-    font-family: $roboto-c-font;
-    font-weight: 400;
 
+    & > p{
+        text-align: center;
+        margin: 10px;
+        font-family: $roboto-c-font;
+        font-weight: 400;
 
+    }
 }
+
