@@ -19,10 +19,10 @@ nav {
         border-right: none;
         color: white;
         border:1px solid $dark-brand-color;
-        // border-top: 2px solid black;
         line-height: 40px;
         font-family: $roboto-c-font;
         font-weight:400;
+        font-size: 20px;
         text-align: center;
         transition: background-color 0.3s, color 0.3s; 
         &:hover,
@@ -69,55 +69,34 @@ nav {
     #socialinham:hover a{
         border: none; /* Remove underline for social icons */
         outline:none;
-
     }
 }
 
 #navDiv{
     border: $dark-brand-color;
 }
-// #socialinham{
-//     font-size: 20px;
-// }
-#socialinham{
+
+#socialinham {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background-color: white;
     align-items: center;
-    border-bottom: 2px solid black;
-    height: auto;
+    overflow: hidden;
+    // font-size: 2px;
 }
 
 #socialinham a {
     display: inline-block;
-    margin: 0 5px;
-    transition: all 0.3s ease;
+    margin: 0 4px;
+    transition: all 0.3s ease-in-out;
+    width: 32px;
+    font-size:22px !important;
+  }
+
+#socialinham a:hover {
+  transform: translateY(-40px);
 }
-
-#socialinham a:hover i {
-    transform: translateY(-5px);
-    color: #808080; /* Grey color */
-}
-
-#socialinham-grey{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-
-// #socialinham a:hover .fa-facebook-f::before,
-// #socialinham a:hover .fa-google::before,
-// #socialinham a:hover .fa-twitter::before {
-//     // color: linear-gradient(to top, $social-media-hover-color 0%, $social-media-hover-color 100%);
-//     // transition: top 0.3s;
-// color: $social-media-hover-color;
-// }
-
-
-
 
 
 /* Styling navigation bar for desktop view */
