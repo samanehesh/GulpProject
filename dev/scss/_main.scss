@@ -1,9 +1,9 @@
 @use "variables" as *;
 
-
 #mainDiv{
         background-image: url("../images/bg.jpg");
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -15,53 +15,55 @@ main{
 
 .topimgandp {
     position: relative;
-    width: 100%; /* Adjust the width as needed */
-    height: 260px; /* Adjust the height as needed */
+    width: 100%; 
+    height: 260px; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 5px;
-  }
+}
 
-  .topimgandp img, .topimgandp picture {
-    display: none; /* Hide the img and picture elements if not needed */
-  }
+.topimgandp img, .topimgandp picture {
+    display: none; 
+}
 
-  .topimgandp p {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(21, 20, 20, 0.5); /* Add a semi-transparent black background for better readability */
-        padding-left: 10px;
-        margin-left: 0;
-        width: 100%; /* Make text width 100% of the container */
-        height: 40px;
-        color: white;
-        align-self: center;
-        display: flex;
-        align-items: center;
-        font-family: $roboto-c-font;
-        font-weight: 400;
-        font-size: 20px;
-  }
+.topimgandp p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(21, 20, 20, 0.5); 
+    padding-left: 10px;
+    margin-left: 0;
+    width: 100%; 
+    height: 40px;
+    color: white;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    font-family: $roboto-c-font;
+    font-weight: 400;
+    font-size: 20px;
+}
 
-  /* Apply background images for each container */
-  .topimgandp:nth-child(1) {
+/* Apply background images for each container */
+.topimgandp:nth-child(1) {
     background-image: url('../images/mussel.jpg');
-  }
+}
 
-  .topimgandp:nth-child(2) {
+.topimgandp:nth-child(2) {
     background-image: url('../images/salad.jpg');
-  }
+}
 
-  .topimgandp:nth-child(3) {
+.topimgandp:nth-child(3) {
     background-image: url('../images/pancake.jpg');
-  }
-// side bar***************************************************
+}
+
+// Side bar *********************************
 #sidebar{
     margin-bottom: 10px;
 }
-// recipe start
+
+// Recipe start
 #latest-recipes > p {
     background-color: $brand-color;
     color: white;
@@ -77,10 +79,14 @@ main{
 
 #latest-recipes > div:nth-child(odd){
     background-color: rgb(248, 244, 244);
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #latest-recipes > div:nth-child(even){
     background-color:white;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 #latest-recipes img{
@@ -97,12 +103,12 @@ main{
 
 .recipeDiv > p{
     padding-left: 6px;
-    font-family: $roboto-c-font;
+    font-family: $roboto-font;
     font-weight: 400;
 }
+// Recipe end
 
-// recipe end
-// cuisine start
+// Cuisine start
 #cusines{
     margin-top: 10px;
 }
@@ -127,20 +133,20 @@ main{
     grid-auto-rows: 30px;
     padding-bottom: 14px;
     padding-top: 15px;
-    font-family: $roboto-c-font;
+    font-family: $roboto-font;
     font-weight: 400;
 }
-// cuisine end
-// sidebar end*******************************************
+// Cuisine end
+// Sidebar end *********************************
 
-// main course start*********************************
+// Main course start *********************************
 .main-course{
     background-color: white;
     padding: 10px;
     margin-bottom: 10px;
     position: relative;
     & img{
-        margin-top: 40px;
+        margin-top: 30px;
         margin-bottom: 20px;
         width: 100%;
     }
@@ -160,9 +166,11 @@ main{
         margin-top: 10px;
     }
     &>p{
-        font-family: $roboto-c-font;
+        font-family: $roboto-font;
         font-weight: 400;
         font-size: 14px;
+        line-height: 18px;
+
     }    
 }
 
@@ -170,26 +178,27 @@ main{
     color: $brand-color;
     font-size:xx-large;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: $roboto-c-font;
     font-weight: 400;
     font-size: 30px;
+    line-height: 30px;
 }
 
-// main course start*********************************
+// Main course start *********************************
 #older-posts-button{
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-/*tablet small: hamburger menu is gone, search bar goes on top*/
+/*Tablet small: hamburger menu is gone, search bar goes on top*/
 @media (min-width: 500px){
     #cusines>div:last-child{
         grid-template-columns: repeat(3,120px)    
     }
 }
 
-/*tablet large: the two images goes side to side*/
+/*Tablet large: the two images goes side to side*/
 @media (min-width: 650px){
     #top-section{
         display: grid;
@@ -197,11 +206,13 @@ main{
         grid-template-rows: 2;
         gap:5px;
     }
+
     #top-section >div:nth-child(1){
         grid-row: 1;
         grid-column: 1;
         grid-column: span 2;
     }
+
     #top-section >div:nth-child(2),
     #top-section >div:nth-child(3){
         grid-row: 2;
@@ -218,34 +229,39 @@ main{
       }
 }
 
-/* desktop: side bar appears, search goes into nav bar */
+/* Desktop: side bar appears, search goes into nav bar */
 @media (min-width: 800px){
     main{
         display: grid;
         grid-template-columns: 4fr 1fr;
         padding: none;
     }
+
     #cusines>div:last-child{
         display: flex;
         flex-direction: column;
-        gap:13px
+        gap:13px;
+        font-size: 13px;
     }
+
     #sidebar{
         grid-row: 1;
         grid-column: 2;
         margin-left: 10px;
         grid-row: span 2;
     }
+
     #older-posts-button{
         grid-column: 1;
     }
+
     #middle-section{
         grid-row: 2;
         margin-top: 5px;
     }
 }
 
-/* desktop-xl: have a bg image,  */
+/* Desktop-xl: have a bg image,  */
 @media (min-width: 1000px){
 
 }

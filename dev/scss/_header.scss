@@ -1,13 +1,12 @@
 @use "variables" as *;
 
-//mobile styling
+//Mobile styling - Phone Small 
 #headerDiv{
     display: flex;
-    flex-direction: column; /* Ensure vertical stacking of children */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     position: relative;
-    // margin: 0 auto;
     &::after{
         content: "";
         position: absolute;
@@ -52,6 +51,7 @@ header {
 #search-bar {
     display: none;
 }
+
 #main-navigation{
     display: flex;
     flex-direction: column;
@@ -60,24 +60,26 @@ header {
 .li-search-desktop {
     display: none;
 }
+
 #logo img{
     margin-left: 6px;
 }
 
-/* phone small: logo change*/
+/* Phone large: logo change*/
 @media (min-width: 331px) {
     /* Styles for the image when the viewport is 330px or smaller */
     #logo img{
       margin-top: 4px;
-      width: 70%; /* Adjust the width for smaller screens if needed */
+      width: 70%; 
     }    
 }
 
-/*tablet small: hamburger menu is gone, search bar goes on top and no social media*/
+/*Tablet small: Hamburger menu is gone, search bar goes on top and no social media*/
 @media (min-width: 500px){
     header{
         width: 97%;
     }
+
     #searchinham {
         display: none;
     }
@@ -129,11 +131,12 @@ header {
     }
 }
 
-/*tablet large: social media next top search bar*/
+/*Tablet large: social media next top search bar*/
 @media (min-width: 700px){
     #logo img{
         width: 42%;
     }
+
     #social-media{
         display: block;
     }
@@ -153,7 +156,8 @@ header {
     #social-media a:hover .fa-google::before,
     #social-media a:hover .fa-twitter::before {
     color: $social-media-hover-color;
-}
+    }
+
     #search-bar{
         margin-right: 130px;
         margin-top: 13px;
@@ -168,9 +172,8 @@ header {
     }
 }
 
-/* desktop: side bar appears, search goes into nav bar */
+/* Desktop: side bar appears, search goes into nav bar */
 @media (min-width: 800px){
-
     #logo img{
         width: 43%;
     }
@@ -201,8 +204,8 @@ header {
             font-weight: 400;
             width: 280px;
             padding: 10px;
-            // margin-right: 10px;
         }
+
         & button{
             position: absolute;
             right: 10px;
@@ -214,24 +217,12 @@ header {
     }
 }
 
-/* desktop-xl: have a bg image,  */
+/* Desktop-xl: Habe a bg image,  */
 @media (min-width: 1000px){
     #logo img{
         width: 33%;
     }
     .search-desktop button {
-        right: calc((100% - 1000px) / 2 + 10px); /* Calculate the right position based on the screen width */
+        right: calc((100% - 1000px) / 2 + 10px);
     }   
-}
-
-@media (min-width: 1300px){
-    #logo img{
-        width: 23%;
-    }
-}
-
-@media (min-width: 1600px){
-    #logo img{
-        width: 20%;
-    }
 }
