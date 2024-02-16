@@ -170,7 +170,6 @@ main{
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-
     }    
 }
 
@@ -178,7 +177,6 @@ main{
     color: $brand-color;
     font-size:xx-large;
     margin-top: 10px;
-    margin-bottom: 10px;
     font-family: $roboto-c-font;
     font-weight: 400;
     font-size: 30px;
@@ -259,9 +257,4 @@ main{
         grid-row: 2;
         margin-top: 5px;
     }
-}
-
-/* Desktop-xl: have a bg image,  */
-@media (min-width: 1000px){
-
 }
