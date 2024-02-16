@@ -83,7 +83,6 @@ nav {
     background-color: white;
     align-items: center;
     overflow: hidden;
-    // font-size: 2px;
 }
 
 #socialinham a {
@@ -101,11 +100,6 @@ nav {
 
 /* Styling navigation bar for desktop view */
 @media (min-width: 500px) {
-    // #navDiv{
-    //     margin-left: 10px;
-    //     margin-right: 10px;
-        // background-color: black;
-    // }
 
     #searchinham{
         display: none;
@@ -145,6 +139,3 @@ nav {
 }
 }
 
-@media (min-width: 1000px){
-
-}
