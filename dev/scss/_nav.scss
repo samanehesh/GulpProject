@@ -18,7 +18,7 @@ nav {
         display: block;
         border-right: none;
         color: white;
-        border:1px solid $dark-brand-color;
+        border:1px solid $border-color;
         line-height: 40px;
         font-family: $roboto-c-font;
         font-weight:400;
@@ -73,9 +73,8 @@ nav {
 }
 
 #navDiv{
-    border: $dark-brand-color;
+    border: 1px solid $border-color;
 }
-
 #socialinham {
     display: flex;
     flex-direction: row;
