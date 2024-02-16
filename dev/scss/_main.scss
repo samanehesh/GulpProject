@@ -13,18 +13,71 @@ main{
     padding:10px;
 }
 
-.topimgandp {
-    margin-top: px;
-    position: relative;
-    max-width: 100%; /* Ensure container doesn't exceed its parent's width */
-    margin-bottom: 5px;
+// #top-section{
+//     display: grid;
+//     grid-template-columns: 1;
+//     grid-template-rows: 3;
+// }
+// #top-section >div:nth-child(1){
+//     grid-row: 1;
+//     grid-column: 1;
+// }
+// #top-section >div:nth-child(2){
+//     grid-row: 2;
+//     grid-column: 1;
 
-    & img{
-        max-width: 100%; /* Ensure image doesn't exceed container width */
-        height: auto; /* Maintain image aspect ratio */
-        width: 100%;
-    }
-    & p {
+// }
+// #top-section >div:nth-child(3){
+//     grid-row: 3;
+//     grid-column: 1;
+// }
+
+// .topimgandp {
+//     margin-top: px;
+//     position: relative;
+//     max-width: 100%; /* Ensure container doesn't exceed its parent's width */
+//     margin-bottom: 5px;
+
+//     & img{
+//         max-width: 100%; /* Ensure image doesn't exceed container width */
+//         height: auto; /* Maintain image aspect ratio */
+//         width: 100%;
+//     }
+//     & p {
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         background-color: rgba(21, 20, 20, 0.5); /* Add a semi-transparent black background for better readability */
+//         padding-left: 10px;
+//         margin-left: 0;
+//         width: 100%; /* Make text width 100% of the container */
+//         height: 40px;
+//         color: white;
+//         align-self: center;
+//         display: flex;
+//         align-items: center;
+//         font-family: $roboto-c-font;
+//         font-weight: 400;
+//         font-size: 20px;
+//         margin-bottom: 3px;
+//     }
+// }
+
+.topimgandp {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+  }
+
+  .topimgandp img, .topimgandp picture {
+    display: none; /* Hide the img and picture elements if not needed */
+  }
+
+  .topimgandp p {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -40,10 +93,25 @@ main{
         font-family: $roboto-c-font;
         font-weight: 400;
         font-size: 20px;
-        margin-bottom: 3px;
-    }
-}
+        // margin-bottom: 3px;
+  }
+
+  /* Apply background images for each container */
+  .topimgandp:nth-child(1) {
+    background-image: url('../images/mussel.jpg');
+  }
+
+  .topimgandp:nth-child(2) {
+    background-image: url('../images/salad.jpg');
+  }
+
+  .topimgandp:nth-child(3) {
+    background-image: url('../images/pancake.jpg');
+  }
 // side bar***************************************************
+#sidebar{
+    margin-bottom: 10px;
+}
 // recipe start
 #latest-recipes > p {
     background-color: $brand-color;
@@ -111,7 +179,7 @@ main{
 .main-course{
     background-color: white;
     padding: 10px;
-    margin-top: 5px;
+    margin-bottom: 10px;
     position: relative;
     & img{
         margin-top: 40px;
@@ -161,6 +229,11 @@ main{
     #cusines>div:last-child{
         grid-template-columns: repeat(3,120px)    
     }
+    // .topimgandp img{
+    //         max-width: 100%; /* Ensure image doesn't exceed container width */
+    //         height: 200px; /* Maintain image aspect ratio */
+          
+    //     }
     
 }
 
@@ -170,6 +243,7 @@ main{
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: 2;
+        gap:5px;
     }
     #top-section >div:nth-child(1){
         grid-row: 1;
@@ -188,8 +262,11 @@ main{
     }
 
     #top-section >div:nth-child(3){
-        margin-left: 10px;
+        // margin-left: 10px;
     }
+    .topimgandp {
+        margin-bottom: none;
+      }
 }
 
 
@@ -216,6 +293,7 @@ main{
     }
     #middle-section{
         grid-row: 2;
+        margin-top: 5px;
     }
 }
 
