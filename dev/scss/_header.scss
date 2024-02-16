@@ -75,7 +75,9 @@ header {
 
 /*tablet small: hamburger menu is gone, search bar goes on top and no social media*/
 @media (min-width: 500px){
-
+    header{
+        width: 97%;
+    }
     #searchinham {
         display: none;
     }
@@ -114,7 +116,6 @@ header {
             font-family: $roboto-c-font;
             font-weight: 400;
             padding-left: 10px;
-            margin-right: 10px;
             margin-top: 5px;
         }
         & button {
