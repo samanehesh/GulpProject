@@ -26,3 +26,12 @@ function removeTransition(e){
 		nav.classList.remove('activated');
 	}
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuButton = document.getElementById('btn-menu');
+    var navDiv = document.getElementById('navDiv');
+
+    menuButton.addEventListener('click', function () {
+        navDiv.classList.toggle('with-border');
+    });
+});

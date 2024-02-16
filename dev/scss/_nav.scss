@@ -72,9 +72,10 @@ nav {
     }
 }
 
-#navDiv{
+#navDiv.with-border {
     border: 1px solid $border-color;
 }
+
 #socialinham {
     display: flex;
     flex-direction: row;
