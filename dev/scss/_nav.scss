@@ -24,6 +24,7 @@ nav {
         font-family: $roboto-c-font;
         font-weight:400;
         text-align: center;
+        transition: background-color 0.3s, color 0.3s; 
         &:hover,
         &:active,
         &:focus {
@@ -34,16 +35,12 @@ nav {
         }
     }
     &.activated {
-        transition: height calc(($trans-time)*1s) ease, visibility 0s 0.3s;
+        transition: height calc(($trans-time)*0.4s) ease, visibility 0s 0.3s;
     }
     .show & {
-        transition: height calc(($trans-time)*1s) ease, visibility 0s;
+        transition: height calc(($trans-time)*0.4s) ease, visibility 0s;
         visibility: visible;
         height: 290px;
-    }
-
-    #socialinham{
-        font-size: 20px;
     }
     
     #searchinham input{
@@ -75,6 +72,13 @@ nav {
 
     }
 }
+
+#navDiv{
+    border: $dark-brand-color;
+}
+// #socialinham{
+//     font-size: 20px;
+// }
 #socialinham{
     display: flex;
     flex-direction: row;
@@ -85,15 +89,32 @@ nav {
     height: auto;
 }
 
-
-
-#socialinham a:hover .fa-facebook-f::before,
-#socialinham a:hover .fa-google::before,
-#socialinham a:hover .fa-twitter::before {
-    // color: linear-gradient(to top, $social-media-hover-color 0%, $social-media-hover-color 100%);
-    // transition: top 0.3s;
-color: $social-media-hover-color;
+#socialinham a {
+    display: inline-block;
+    margin: 0 5px;
+    transition: all 0.3s ease;
 }
+
+#socialinham a:hover i {
+    transform: translateY(-5px);
+    color: #808080; /* Grey color */
+}
+
+#socialinham-grey{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+// #socialinham a:hover .fa-facebook-f::before,
+// #socialinham a:hover .fa-google::before,
+// #socialinham a:hover .fa-twitter::before {
+//     // color: linear-gradient(to top, $social-media-hover-color 0%, $social-media-hover-color 100%);
+//     // transition: top 0.3s;
+// color: $social-media-hover-color;
+// }
 
 
 
@@ -113,6 +134,9 @@ color: $social-media-hover-color;
     #socialinham{
         display: none;
     }
+    #socialinham-grey{
+        display: none;
+    }
     nav {
         visibility: visible;
         height: 45px;
@@ -129,6 +153,7 @@ color: $social-media-hover-color;
             line-height: 45px;
             text-align: center;
             border: none;
+            transition: background-color 0.4s, color 0.4s; 
                 
         &:hover,
         &:active,
